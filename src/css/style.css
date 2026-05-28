@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/* Faixa escura para Header e Footer (Fiel ao modelo da foto) */
+.faixa-escura {
+    background-color: #333; /* Cor cinza escuro da TV */
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+/* Menu do Header */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Área do texto */
+.conteudo {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    padding-top: 100px;
+}
+
+section {
+    padding: 50px 0;
+}
+
+
+hr {
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 0 auto;
+}
+
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+    opacity: 0.8; 
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+
+}
+html{
+    scroll-behavior: smooth;
+}
