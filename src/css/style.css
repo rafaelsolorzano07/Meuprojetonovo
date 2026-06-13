@@ -10,7 +10,7 @@ html, body, main, .content-wrapper {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Ativa o efeito de deslizar suave em toda a página ao usar links com # */
+/* efeito de deslizar ao usar links com # na pagina toda */
 html {
     scroll-behavior: smooth;
 }
@@ -18,7 +18,7 @@ html {
 body {
     background-color: #121212;
     color: #ffffff;
-    display: flex; /* Alinha a barra lateral e o wrapper de conteúdo lado a lado */
+    display: flex; /* para alinhar a barra lateral lado a lado com o conteúdo */
 }
 
 /* Barra Lateral (Sidebar) */
@@ -26,7 +26,7 @@ body {
     width: 260px;
     height: 100vh; /* Ocupa 100% da altura da tela */
     background-color: #1a1a1a;
-    position: fixed; /* Trava a barra na tela mesmo ao rolar a página */
+    position: fixed; /* Trava a barra na tela independente de rolar a página */
     top: 0;
     left: 0;
     padding: 40px 20px;
@@ -45,7 +45,7 @@ body {
     letter-spacing: 1px;
 }
 
-/* Estilos gerais das listas de navegação da barra lateral */
+/* para as listas de navegação das barras laterais */
 .sidebar nav ul {
     list-style: none;
     display: flex;
@@ -105,7 +105,7 @@ body {
 .menu-jogador li a:hover {
     color: #ffd700;
     background-color: #222222;
-    padding-left: 20px; /* Dá um leve empurrão para a direita no hover */
+    padding-left: 20px;
 }
 
 /* Container de Conteúdo (Garante que as coisas fiquem à direita da sidebar) */
@@ -114,12 +114,12 @@ body {
     width: calc(100% - 260px);
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Empurra o footer para a base se a página tiver pouco conteúdo */
+    min-height: 100vh; /* adapta o footer se a página tiver com pouco conteudo */
 }
 
-/* Páginas e Miolo do Site */
+/* Páginas do site */
 main {
-    flex: 1; /* Faz o conteúdo principal ocupar todo o espaço disponível antes do footer */
+    flex: 1; /* Faz o main conteudo ocupar todo o espaço disponivel antes do footer. */
 }
 
 .partida {
@@ -241,7 +241,7 @@ footer {
 }
 
 h3 {
-    color: #ffd700; /* Atualizado para dourado para padronizar com os títulos */
+    color: #ffd700; /* para padronizar e bater com os títulos */
     padding: 5px 0;
 }
 
@@ -302,13 +302,13 @@ li {
     width: 100%;
     max-width: 800px; /* Limita o tamanho máximo para não estourar na tela */
     height: auto;
-    border: 4px solid #ffd700; /* Borda dourada aplicada diretamente na foto */
-    border-radius: 8px; /* Cantos levemente suavizados */
+    border: 4px solid #ffd700; /* borda dourada aplicada na foto */
+    border-radius: 8px; /* suavização dos cantos */
 }
 h3{
     color: green;
 }
-/* Cria um espaço confortável no topo quando a página terminar de rolar */
+/* criação de um espaço pro topo */
 section {
     scroll-margin-top: 30px;
 }
