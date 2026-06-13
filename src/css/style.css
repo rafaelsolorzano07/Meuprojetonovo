@@ -54,7 +54,7 @@ body {
 }
 
 /* Menu Principal (Links de troca de página) */
-.main-menu li a {
+.menu-principal li a {
     color: #aaaaaa;
     text-decoration: none;
     font-size: 18px;
@@ -64,8 +64,8 @@ body {
     transition: all 0.3s ease;
 }
 
-.main-menu li a:hover, 
-.main-menu li a.active {
+.menu-principal li a:hover, 
+.menu-principal li a.active {
     color: #ffffff;
     background-color: #2a2a2a;
     border-left: 4px solid #ffd700;
@@ -73,14 +73,14 @@ body {
 }
 
 /* Linha divisória interna da barra lateral */
-.sidebar-divider {
+.sidebar-divisor {
     height: 1px;
     background-color: #333;
     margin: 10px 0;
 }
 
 /* Menu de Âncoras do Jogador (Submenu dos tópicos da página) */
-.player-sections-menu .menu-title {
+.menu-jogador .menu-titulo {
     display: block;
     font-size: 13px;
     text-transform: uppercase;
@@ -92,7 +92,7 @@ body {
     opacity: 0.8;
 }
 
-.player-sections-menu li a {
+.menu-jogador li a {
     color: #888888;
     text-decoration: none;
     font-size: 15px;
@@ -102,14 +102,14 @@ body {
     transition: all 0.2s ease;
 }
 
-.player-sections-menu li a:hover {
+.menu-jogador li a:hover {
     color: #ffd700;
     background-color: #222222;
     padding-left: 20px; /* Dá um leve empurrão para a direita no hover */
 }
 
 /* Container de Conteúdo (Garante que as coisas fiquem à direita da sidebar) */
-.content-wrapper {
+.conteudo {
     margin-left: 260px; /* Exatamente a largura da sidebar para não sobrepor */
     width: calc(100% - 260px);
     display: flex;
@@ -122,21 +122,21 @@ main {
     flex: 1; /* Faz o conteúdo principal ocupar todo o espaço disponível antes do footer */
 }
 
-.main-home {
+.partida {
     text-align: center;
     padding: 60px 20px;
 }
 
-.main-home h1 {
+.partida h1 {
     font-size: 40px;
     margin-bottom: 15px;
 }
 
-.banner-container {
+.caixa-imagem {
     margin-top: 40px;
 }
 
-.img-home {
+.principal-img {
     max-width: 85%;
     height: auto;
     border-radius: 10px;
@@ -144,13 +144,13 @@ main {
 }
 
 /* Layout do Jogador */
-.player-page {
+.pagina-jogador {
     max-width: 800px;
     margin: 40px auto;
     padding: 0 20px;
 }
 
-.player-intro {
+.intro-jogador {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -159,7 +159,7 @@ main {
 }
 
 /* Remove o formato circular da foto principal e deixa quadrada com cantos suaves */
-.player-img {
+.jogador-img {
     width: 280px;
     height: auto;
     object-fit: cover;
@@ -167,18 +167,18 @@ main {
     border: 4px solid #ffd700;
 }
 
-.history h2, .player-stats h2, .player-skills h2, .player-section h2 {
+.historia h2, .player-stats h2, .player-skills h2, .player-section h2 {
     color: #ffd700;
     margin-bottom: 15px;
 }
 
-.history p {
+.historia p {
     line-height: 1.7;
     font-size: 18px;
     color: #dddddd;
 }
 
-.divider {
+.linha {
     margin: 40px 0;
     border: 0;
     height: 1px;
@@ -210,11 +210,11 @@ td {
 }
 
 /* Link de Vídeo */
-.player-skills p {
+.jogador-skills p {
     margin-bottom: 10px;
 }
 
-.video-btn {
+.botao-video {
     display: inline-block;
     padding: 12px 25px;
     background-color: #e50914;
@@ -225,7 +225,7 @@ td {
     transition: background 0.3s;
 }
 
-.video-btn:hover {
+.botao-video:hover {
     background-color: #b80710;
 }
 
@@ -250,14 +250,14 @@ li {
 }
 
 /* Logos da Trajetória (Linha do Tempo) */
-.career-timeline {
+.carreira {
     display: flex;
     flex-direction: column;
     gap: 25px;
     margin-top: 20px;
 }
 
-.club-block {
+.bloco-clube {
     display: flex;
     align-items: center;
     background-color: #1a1a1a;
@@ -268,7 +268,7 @@ li {
     transition: transform 0.2s ease;
 }
 
-.club-block:hover {
+.bloco-clube:hover {
     transform: translateX(5px);
     background-color: #222222;
 }
@@ -280,20 +280,20 @@ li {
     flex-shrink: 0;
 }
 
-.club-text h3 {
+.texto-clube h3 {
     color: #ffd700;
     padding: 0;
     margin-bottom: 5px;
 }
 
-.club-text p {
+.texto-clube p {
     font-size: 16px;
     line-height: 1.6;
     color: #cccccc;
 }
 
 /* Foto das Olimpíadas (Borda e Centralização) */
-.banner-container2 {
+.caixa-imagem2 {
     margin-top: 30px;
     text-align: center;
 }
