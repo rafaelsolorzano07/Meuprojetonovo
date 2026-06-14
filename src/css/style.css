@@ -15,7 +15,7 @@ html {
 body {
     background-color: #121212;
     color: #ffffff;
-    display: flex; /* alinha barra lateral */
+    display: flex;
 }
 
 
@@ -31,7 +31,8 @@ body {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    overflow-y: auto; /* Permite rolar a própria sidebar caso a tela seja muito baixa */
+    overflow-y: auto; /* deixa a barra lateral fluir e rolar */
+     justify-content: space-between;
 }
 
 .logo {
@@ -42,7 +43,7 @@ body {
     letter-spacing: 1px;
 }
 
-/* para as listas de navegação das barras laterais */
+
 .sidebar nav ul {
     list-style: none;
     display: flex;
@@ -58,7 +59,7 @@ body {
     display: block;
     padding: 10px 15px;
     border-radius: 5px;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease; /*pra efeito mais fluido*/
 }
 
 .menu-principal li a:hover, 
@@ -111,7 +112,7 @@ body {
     width: calc(100% - 260px);
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* adapta o footer se a página tiver com pouco area-conteudo */
+    min-height: 100vh; /* adapta o footer */
 }
 
 /* Páginas do site */
@@ -137,7 +138,7 @@ main {
     max-width: 85%;
     height: auto;
     border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(255, 215, 0, 0.15);
+    box-shadow: 0 4px 20px rgba(255, 215, 0, 0.15); /*efeito de brilho ou sombra suave*/
 }
 
 /* Layout do Jogador */
@@ -289,7 +290,6 @@ li {
     color: #cccccc;
 }
 
-/* Foto das Olimpíadas Neymar */
 .foto-destaque {
     margin-top: 30px;
     text-align: center;
@@ -303,7 +303,6 @@ li {
     border-radius: 8px;
 }
 
-/* criação de um espaço pro topo */
 section {
     scroll-margin-top: 30px;
 }
@@ -340,4 +339,24 @@ section {
 .jogador-numeros h2 {
     margin-bottom: 15px;
     margin-top: 30px;
+}
+
+.btn-top3 {
+    display: block;
+    text-align: center;
+    padding: 12px;
+    background-color: #ffd700;
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+.btn-top3:hover {
+    background-color: #e6c200;
+}
+
+.rank-img{
+    
 }
